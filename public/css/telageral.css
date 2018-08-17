@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: "Lato", Lato, Arial, open-sans;
+    text-align: center;
+    color: #aaa;
+    font-size: 18px;
+}
+
+h1 {
+    color: #0d1f22;
+    letter-spacing: -3px;
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+    font-weight: 200;
+    margin-bottom: 0;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #fffffa;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+   
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    color: #0d1f22;
+    text-align: center;
+    padding: 4px 8px;
+    margin: 3px;
+    text-decoration: none;
+    font-size: 17px;
+    
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #c5cfd6;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #c5cfd6;
+    color: black;
+}
+
+.main{
+float: left;
+}

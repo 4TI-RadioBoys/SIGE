@@ -4,29 +4,47 @@
         <meta charset="utf-8"/>
         <title>Slim 3</title>
         <link href='//fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
-        <style>
-            body {
-                margin: 50px 0 0 0;
-                padding: 0;
-                width: 100%;
-                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-                text-align: center;
-                color: #aaa;
-                font-size: 18px;
-            }
-
-            h1 {
-                color: #719e40;
-                letter-spacing: -3px;
-                font-family: 'Lato', sans-serif;
-                font-size: 100px;
-                font-weight: 200;
-                margin-bottom: 0;
-            }
-        </style>
+        <link href='/css/telageral.css' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <h1>Slim</h1>
+        <div class="topnav">
+            <a href="#eventos">Eventos</a>
+            <a href="#contato">Contato</a>
+        </div>
+        <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+          <button class="w3-bar-item w3-button w3-large"
+             onclick="w3_close()">Close &times;</button>
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        </div>
+
+        <div id="main">
+            <div class="w3-teal">
+                <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+            <div class="w3-container">
+                <h1>My Page</h1>
+            </div>
+        </div>
+        </div>
+    <script>
+        function w3_open() {
+            document.getElementById("main").style.marginLeft = "25%";
+            document.getElementById("mySidebar").style.width = "25%";
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("openNav").style.display = 'none';
+        }
+        function w3_close() {
+            document.getElementById("main").style.marginLeft = "0%";
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("openNav").style.display = "inline-block";
+        }
+    </script>
+        
+        
+        <h1>Yo</h1>
         <div>a microframework for PHP</div>
 
         <?php if (isset($name)) : ?>
